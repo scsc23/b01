@@ -1,8 +1,4 @@
-buildscript {
-    ext {
-        queryDslVersion = "5.0.0"
-    }
-}
+
 
 plugins {
     id 'java'
@@ -12,6 +8,7 @@ plugins {
 
 group = 'org.zerock'
 version = '0.0.1-SNAPSHOT'
+def queryDslVersion= '5.0.0'
 
 java {
     sourceCompatibility = '17'
@@ -67,6 +64,10 @@ dependencies {
 
     // Oauth2 인증 - 소셜 로그인 처리를 위한 프레임워크
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+
+    // https://mvnrepository.com/artifact/net.coobird/thumbnailator
+    implementation 'net.coobird:thumbnailator:0.4.20'
+
 
 }
 
